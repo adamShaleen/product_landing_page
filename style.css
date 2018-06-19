@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption');
+
+body {
+    margin: auto;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: white;
+}
+
+#header-img {
+    width: 25vw;
+    height: 15vh;
+}
+
+#nav-bar {
+    margin-top: 6vh;
+}
+
+.nav-link {
+    margin-left: 9px;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+}
+
+#photos-container img {
+    width: 100%;
+}
