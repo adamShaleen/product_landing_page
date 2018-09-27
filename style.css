@@ -22,6 +22,7 @@ p, li, span {
     width: 20vw;
     height: 10vh;
     margin-top: 2px;
+    margin-bottom: 2px;
     margin-left: 10px;
 }
 
@@ -37,17 +38,49 @@ p, li, span {
     cursor: pointer;
 }
 
-#video-container iframe {
-    width: 100%;
-    margin-top: 80px;
-}
-
 #photos-container img {
     width: 100%;
+    padding-top: 15%;
 }
 
 .text-container {
     padding: 5px;
+    margin: auto;
+}
+
+#video-container {
+    width: 100%;
+    height: 0;
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+#video-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media(min-width: 768px) {
+    #photos-container {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    .text-container {
+        margin: auto;
+        width: 70%;
+    }
+    #video-container {
+        width: 80%;
+        margin-left: 15%;
+        margin-right: 15%
+    }
+    #video-container iframe {
+        width: 100%;
+        height: 80%;
+    }
 }
 
 #form {
@@ -56,6 +89,11 @@ p, li, span {
 
 #email {
     width: 90px;
+}
+
+#submit {
+    color: white;
+    background: black;
 }
 
 button {
